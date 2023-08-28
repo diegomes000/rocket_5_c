@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&family=Montserrat:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="main.js" defer type="module"></script>
+
+</head>
+<body>
+    <div class="container">
+        <main class="card">
+            <form>
+                <h1 class="title">IMC Calculator</h1>
+                <div class="input-wrapper">
+                    <label for="weight">Weight (kg)</label>
+                    <input id="weight" type="text" placeholder="60">
+                </div>
+                <div class="input-wrapper">
+                    <label for="height">Height (cm)</label>
+                    <input id="height" type="text" placeholder="1.65">
+                </div>
+                <button type="submit">Calculate <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3.1685 8.26205L14.3589 8.26213M14.3589 8.26213L9.64488 3.54808M14.3589 8.26213L9.64488 12.9762" stroke="white" stroke-width="1.20972" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    </button>
+
+            </form>
+        </main>
+    </div>
+
+    <div class="modal-wrapper">
+        <div class="modal card">
+            <h2 class="title">
+                <button class="close"><img src="close.svg" alt="close"></button>
+            <span>
+            Your IMC is 28
+            </span>
+            </h2>
+        </div>
+    
+
+    </div>
+
+    <div class="alert-error">
+        Type numbers only
+    </div>
+</body>
+</html>
